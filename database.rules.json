@@ -1,0 +1,53 @@
+{
+  "rules": {
+    // Users: users can read all, write own data, admins can do anything
+    "users": {
+      "$userId": {
+        ".read": true,
+        ".write": "$userId === auth.uid || auth.token.role === 'ADMIN' || auth.token.role === 'OWNER'",
+        ".validate": "newData.hasChildren(['id', 'role']) && newData.child('id').val() === $userId"
+      }
+    },
+
+    // Jobs: publicly readable, only owner/admin can modify
+    "jobs": {
+      ".read": true,
+      "$jobId": {
+        ".write": "auth != null && (data.child('employerId').val() === auth.uid || auth.token.role === 'ADMIN' || auth.token.role === 'OWNER')",
+        ".validate": "newData.hasChildren(['id', 'employerId', 'title', 'status']) && newData.child('id').val() === $jobId"
+      }
+    },
+
+    // Applications: owner and applicant can read, employer can read own job apps
+    "applications": {
+      ".read": "auth != null",
+      "$appId": {
+        ".write": "auth != null && (data.child('seekerId').val() === auth.uid || data.child('employerId').val() === auth.uid || auth.token.role === 'ADMIN' || auth.token.role === 'OWNER')",
+        ".validate": "newData.hasChildren(['id', 'jobId', 'seekerId', 'status'])"
+      }
+    },
+
+    // Ratings: publicly readable, only target user can write
+    "ratings": {
+      ".read": true,
+      "$ratingId": {
+        ".write": "auth != null && newData.child('fromUserId').val() === auth.uid",
+        ".validate": "newData.hasChildren(['id', 'fromUserId', 'toUserId', 'rating']) && newData.child('rating').val() >= 1 && newData.child('rating').val() <= 5"
+      }
+    },
+
+    // Stats: only server-side can write
+    "stats": {
+      ".read": true,
+      ".write": false
+    },
+
+    // Online presence: users can only modify own presence
+    "online": {
+      "$userId": {
+        ".read": true,
+        ".write": "$userId === auth.uid"
+      }
+    }
+  }
+}

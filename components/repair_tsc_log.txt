@@ -1,0 +1,43 @@
+Navbar.tsx(161,1): error TS1128: Declaration or statement expected.
+Navbar.tsx(161,7): error TS1109: Expression expected.
+ProfileSettings.tsx(173,1): error TS1128: Declaration or statement expected.
+ProfileSettings.tsx(173,7): error TS1109: Expression expected.
+ShotModal.tsx(141,1): error TS1128: Declaration or statement expected.
+ShotModal.tsx(141,7): error TS1109: Expression expected.
+Sidebar.tsx(292,1): error TS1128: Declaration or statement expected.
+Sidebar.tsx(292,7): error TS1109: Expression expected.
+../pages/AuthPage.tsx(230,1): error TS1128: Declaration or statement expected.
+../pages/AuthPage.tsx(232,1): error TS1109: Expression expected.
+../pages/AuthPage.tsx(232,7): error TS1109: Expression expected.
+../pages/EmployerDashboard.tsx(284,4): error TS1005: ')' expected.
+../pages/EmployerDashboard.tsx(286,53): error TS1382: Unexpected token. Did you mean `{'>'}` or `&gt;`?
+../pages/EmployerDashboard.tsx(412,17): error TS17002: Expected corresponding JSX closing tag for 'div'.
+../pages/EmployerDashboard.tsx(414,9): error TS1005: ')' expected.
+../pages/EmployerDashboard.tsx(415,7): error TS1109: Expression expected.
+../pages/EmployerDashboard.tsx(415,8): error TS1128: Declaration or statement expected.
+../pages/EmployerDashboard.tsx(519,11): error TS1005: ')' expected.
+../pages/EmployerDashboard.tsx(520,9): error TS1109: Expression expected.
+../pages/EmployerDashboard.tsx(521,7): error TS1128: Declaration or statement expected.
+../pages/EmployerDashboard.tsx(523,24): error TS1005: ',' expected.
+../pages/EmployerDashboard.tsx(532,8): error TS1128: Declaration or statement expected.
+../pages/EmployerDashboard.tsx(533,5): error TS1128: Declaration or statement expected.
+../pages/EmployerDashboard.tsx(534,3): error TS1128: Declaration or statement expected.
+../pages/EmployerDashboard.tsx(538,1): error TS1128: Declaration or statement expected.
+../pages/EmployerDashboard.tsx(540,1): error TS1128: Declaration or statement expected.
+../pages/EmployerDashboard.tsx(542,1): error TS1128: Declaration or statement expected.
+../pages/EmployerDashboard.tsx(544,1): error TS1128: Declaration or statement expected.
+../pages/LoginPage.tsx(140,1): error TS1128: Declaration or statement expected.
+../pages/LoginPage.tsx(142,1): error TS1109: Expression expected.
+../pages/LoginPage.tsx(142,7): error TS1109: Expression expected.
+../pages/ProjectInfo.tsx(384,1): error TS1128: Declaration or statement expected.
+../pages/ProjectInfo.tsx(384,7): error TS1109: Expression expected.
+../pages/SignupPage.tsx(222,1): error TS1128: Declaration or statement expected.
+../pages/SignupPage.tsx(224,1): error TS1109: Expression expected.
+../pages/SignupPage.tsx(224,7): error TS1109: Expression expected.
+../src/components/Layout.tsx(141,1): error TS1128: Declaration or statement expected.
+../src/components/Layout.tsx(141,7): error TS1109: Expression expected.
+../src/hooks/useTouchGestures.ts(143,7): error TS1005: '>' expected.
+../src/hooks/useTouchGestures.ts(143,14): error TS1005: ')' expected.
+../src/hooks/useTouchGestures.ts(148,6): error TS1161: Unterminated regular expression literal.
+../src/hooks/useTouchGestures.ts(149,3): error TS1128: Declaration or statement expected.
+../src/hooks/useTouchGestures.ts(150,1): error TS1128: Declaration or statement expected.
