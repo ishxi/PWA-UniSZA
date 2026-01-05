@@ -68,3 +68,10 @@ export interface Rating {
   comment?: string;
   createdAt: string;
 }
+
+export enum Gender {
+  MALE = 'MALE',
+  FEMALE = 'FEMALE',
+  OTHER = 'OTHER'
+}
+
